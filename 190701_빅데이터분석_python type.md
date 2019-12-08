@@ -1,6 +1,6 @@
 #### 2019 - 07 - 01 (4일차)
 
-# 빅데이터 분석_ Anaconda_Python 
+# 빅데이터 분석_Python 
 
 jupyter notebook 실행!!
 
