@@ -100,3 +100,109 @@ Tensoeflow for Java ( Web Application )
 
 - 순수 JavaScript AJAX구현이 복잡하고 유지보수가 쉽지 않아요 => jQuery
 
+
+
+---
+
+- 클라이언트 프로그램( HTML, CSS, JavaScript => HTML5 )을 작성( jQuery를 기반으로 작성 )
+
+  => 예측하고 싶은 이미지를 선택해서 이 이미지의 픽셀 정보를 추출해서 이 데이터를 서버에 전송, 이 전송되는 픽셀 데이터는 [1,784] 형태의 데이터
+
+- 서버 쪽 프로그램을 작성
+
+  => 클라이언트가 보내준 [1,784] 형태의 픽셀데이터를 받아서 CNN 딥러닝 모델을 이용해서 Prediction작업 후 결과 데이터를 클라이언트에게 전송.
+
+
+
+---
+
+콘다 관리자권한 실행해서 파일경로로 들어간뒤 py파일 실행시키기
+
+![image-20191208232801579](assets/image-20191208232801579.png)
+
+![image-20191208232809079](assets/image-20191208232809079.png)
+
+**MNIST(CNN)_Model_Saver_For_TFJavaAPI.py**
+
+![image-20191208232819639](assets/image-20191208232819639.png)
+
+새로운 이클립스 ML_workspace 생성
+
+![image-20191208232829968](assets/image-20191208232829968.png)
+
+Preperence환경설정 UTF-8 로 맞춰주기!!!
+
+Python_ML에 DLL파일 만들어서 
+
+![image-20191208232850254](assets/image-20191208232850254.png)
+
+![image-20191208232854749](assets/image-20191208232854749.png)
+
+![image-20191208232859178](assets/image-20191208232859178.png)
+
+톰캣 7버전설치
+
+![image-20191208232924810](assets/image-20191208232924810.png)
+
+![image-20191208232931054](assets/image-20191208232931054.png)
+
+![image-20191208232935186](assets/image-20191208232935186.png)
+
+서버설치설정 끝
+
+프로젝트 만들기 - 다이나믹 웹 프로젝트로!
+
+![image-20191208232946683](assets/image-20191208232946683.png)
+
+![image-20191208233002482](assets/image-20191208233002482.png)
+
+나머지 설정 default값으로
+
+![image-20191208233034463](assets/image-20191208233034463.png)
+
+**Context root** : 클라이언트에 의해 프로젝트를 찾고, 명시 하기 위한 이름(한글,영문자,대소문자구분)
+
+![image-20191208233052797](assets/image-20191208233052797.png)
+
+![image-20191208233058365](assets/image-20191208233058365.png)
+
+여기서 변경가능함
+
+![image-20191208233107539](assets/image-20191208233107539.png)
+
+서블릿 자바 클래스 생성
+
+![image-20191208233116057](assets/image-20191208233116057.png)
+
+![image-20191208233141287](assets/image-20191208233141287.png)
+
+**url mapping** : Web상에서 java program(servlet)을 지칭하기 위한 논리적인 이름
+
+=> SimpleServlet 을 /sample로 바꾸고 넥스트누르고 finish
+
+![image-20191208233240842](assets/image-20191208233240842.png)
+
+
+
+Life cycle
+
+![image-20191208233244936](assets/image-20191208233244936.png)
+
+HTML 파일 만들기 
+
+![image-20191208233253172](assets/image-20191208233253172.png)
+
+
+
+- jQuery cnd
+
+https://code.jquery.com/
+
+![image-20191208233327202](assets/image-20191208233327202.png)
+
+![image-20191208233342486](assets/image-20191208233342486.png)
+
+![image-20191208233346386](assets/image-20191208233346386.png)
+
+index.js 만듬 , 파일명 오타나서 수정했음!
+
